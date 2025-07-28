@@ -1,0 +1,10 @@
+2025-02-09 17:17:15.201 EST [2102642] LOG:  starting PostgreSQL 16.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 12.3.0, 64-bit
+2025-02-09 17:17:15.202 EST [2102642] LOG:  listening on IPv6 address "::1", port 5432
+2025-02-09 17:17:15.202 EST [2102642] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-02-09 17:17:15.213 EST [2102642] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-02-09 17:17:15.245 EST [2102646] LOG:  database system was shut down at 2025-02-09 16:34:33 EST
+2025-02-09 17:17:15.268 EST [2102642] LOG:  database system is ready to accept connections
+2025-02-09 17:18:06.236 EST [2102743] ERROR:  table "embeddings" does not exist
+2025-02-09 17:18:06.236 EST [2102743] STATEMENT:  DROP TABLE embeddings;
+2025-02-09 17:22:15.345 EST [2102644] LOG:  checkpoint starting: time
+2025-02-09 17:23:50.990 EST [2102644] LOG:  checkpoint complete: wrote 938 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=93.723 s, sync=0.817 s, total=95.646 s; sync files=308, longest=0.435 s, average=0.003 s; distance=4473 kB, estimate=4473 kB; lsn=0/2A3AFD0, redo lsn=0/2A3AF98

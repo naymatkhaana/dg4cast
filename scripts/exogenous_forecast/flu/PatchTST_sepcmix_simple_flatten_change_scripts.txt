@@ -1,0 +1,351 @@
+
+horizon:1 mse:0.03666823357343674, mae:0.1557321846485138, smape:10.360702872276306, dtw:not calculated
+horizon:2 mse:0.06521753966808319, mae:0.197893887758255, smape:13.12648355960846, dtw:not calculated
+horizon:3 mse:0.0957355797290802, mae:0.23735186457633972, smape:15.708333253860474, dtw:not calculated
+horizon:4 mse:0.133378267288208, mae:0.3037954568862915, smape:20.087748765945435, dtw:not calculated
+horizon:5 mse:0.23971474170684814, mae:0.39915749430656433, smape:26.198649406433105, dtw:not calculated
+horizon:6 mse:0.31354182958602905, mae:0.4940551221370697, smape:32.42964148521423, dtw:not calculated
+horizon:7 mse:0.3645852208137512, mae:0.43642839789390564, smape:28.19300889968872, dtw:not calculated
+horizon:8 mse:0.39760488271713257, mae:0.5282379984855652, smape:34.383001923561096, dtw:not calculated
+horizon:9 mse:0.3726515769958496, mae:0.5565260648727417, smape:36.45418584346771, dtw:not calculated
+horizon:10 mse:0.25826454162597656, mae:0.4553093910217285, smape:29.966658353805542, dtw:not calculated
+horizon:11 mse:0.3522743284702301, mae:0.5196027159690857, smape:34.01815593242645, dtw:not calculated
+horizon:12 mse:0.20089974999427795, mae:0.3738255500793457, smape:24.61148500442505, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.14737601578235626, mae:0.2979976236820221, smape:19.651927053928375, dtw:not calculated
+average metrics: horizon upto:12 mse:0.23587805032730103, mae:0.3881596624851227, smape:25.461503863334656, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.23587805032730103, mae:0.3881596624851227, smape:25.461503863334656, dtw:not calculated
+mean smape over horizons:  25.461504608392715
+fs47816@c4-16 Time-Series-Library$ python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/illness/ --data_path national_illness_24_4.csv --model_id tmmodels44 --model PatchTST_sepcmix_simple_flatten_change --data custom --features MS --seq_len 90 --label_len 0 --pred_len 12 --e_layers 3 --d_layers 1 --factor 3 --enc_in 5 --dec_in 7 --c_out 7 --des 'Exp' --n_heads 1 --batch_size 16 --d_model 256 --d_ff 1024 --patch_len 12 --stride 8 --num_workers 20 --target ILITOTAL --learning_rate 0.0001 --with_retrain 0;
+
+
+
+python -u run.py   --task_name long_term_forecast   --is_training 1   --root_path ./dataset/illness/   --data_path national_illness_24_4.csv   --model_id model_patchtst   --model  PatchTST_sepcmix_simple_flatten_change  --data custom   --features MS   --seq_len 36   --label_len 18   --pred_len 24   --e_layers 2   --d_layers 1   --factor 3   --enc_in 7   --dec_in 7   --c_out 7   --des 'Exp'   --n_heads 2   --d_model 1024  --itr 1   --target ILITOTAL   --with_retrain 0
+
+horizon:1 mse:0.060524024069309235, mae:0.1772797703742981, smape:11.759641021490097, dtw:not calculated
+horizon:2 mse:0.12626665830612183, mae:0.28288763761520386, smape:18.692880868911743, dtw:not calculated
+horizon:3 mse:0.24270883202552795, mae:0.3760545551776886, smape:24.595052003860474, dtw:not calculated
+horizon:4 mse:0.2528753876686096, mae:0.3948930501937866, smape:25.85628032684326, dtw:not calculated
+horizon:5 mse:0.4637703597545624, mae:0.5663872361183167, smape:36.66377365589142, dtw:not calculated
+horizon:6 mse:0.46633321046829224, mae:0.599977433681488, smape:38.98206949234009, dtw:not calculated
+horizon:7 mse:0.538690447807312, mae:0.6176614165306091, smape:39.90147113800049, dtw:not calculated
+horizon:8 mse:0.5304896235466003, mae:0.6196751594543457, smape:40.05025327205658, dtw:not calculated
+horizon:9 mse:0.7473436594009399, mae:0.7343102097511292, smape:46.962547302246094, dtw:not calculated
+horizon:10 mse:0.8414567708969116, mae:0.7972926497459412, smape:50.83664655685425, dtw:not calculated
+horizon:11 mse:0.9272684454917908, mae:0.8179470300674438, smape:51.74774527549744, dtw:not calculated
+horizon:12 mse:0.8454829454421997, mae:0.8211966156959534, smape:52.52038836479187, dtw:not calculated
+horizon:13 mse:0.8271794319152832, mae:0.7691251039505005, smape:48.935696482658386, dtw:not calculated
+horizon:14 mse:0.8943857550621033, mae:0.8162588477134705, smape:51.838618516922, dtw:not calculated
+horizon:15 mse:1.0088633298873901, mae:0.9016808867454529, smape:57.23842978477478, dtw:not calculated
+horizon:16 mse:0.7857373356819153, mae:0.6622711420059204, smape:41.64213836193085, dtw:not calculated
+horizon:17 mse:1.1042485237121582, mae:0.8032416701316833, smape:49.51680302619934, dtw:not calculated
+horizon:18 mse:1.0578972101211548, mae:0.7586973905563354, smape:46.49114012718201, dtw:not calculated
+horizon:19 mse:0.7196241021156311, mae:0.6339150667190552, smape:39.926788210868835, dtw:not calculated
+horizon:20 mse:0.7278047204017639, mae:0.647170901298523, smape:40.810221433639526, dtw:not calculated
+horizon:21 mse:0.670851469039917, mae:0.5881122350692749, smape:37.06074357032776, dtw:not calculated
+horizon:22 mse:0.7118175029754639, mae:0.5840880274772644, smape:36.56814694404602, dtw:not calculated
+horizon:23 mse:0.6742011904716492, mae:0.5139461159706116, smape:31.827345490455627, dtw:not calculated
+horizon:24 mse:0.5967016816139221, mae:0.49237260222435, smape:30.72255551815033, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.26874643564224243, mae:0.3995799720287323, smape:26.091617345809937, dtw:not calculated
+average metrics: horizon upto:12 mse:0.5036008358001709, mae:0.5671302080154419, smape:36.54739558696747, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.659271776676178, mae:0.6240184307098389, smape:39.63114321231842, dtw:not calculated
+
+
+
+python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/illness/ --data_path national_illness_24_4.csv --model_id tmmodels44 --model PatchTST_sepcmix_simple_flatten_change --data custom --features MS --seq_len 96 --label_len 0 --pred_len 12 --e_layers 3 --d_layers 1 --factor 3 --enc_in 5 --dec_in 7 --c_out 7 --des 'Exp' --n_heads 1 --batch_size 16 --d_model 256 --d_ff 1024 --patch_len 16 --stride 8 --num_workers 20 --target ILITOTAL --learning_rate 0.0001 --with_retrain 0;
+
+horizon:1 mse:0.1125481054186821, mae:0.2538570165634155, smape:16.76417887210846, dtw:not calculated
+horizon:2 mse:0.17567257583141327, mae:0.312605619430542, smape:20.52147537469864, dtw:not calculated
+horizon:3 mse:0.14340795576572418, mae:0.2809716761112213, smape:18.497581779956818, dtw:not calculated
+horizon:4 mse:0.17262105643749237, mae:0.34236669540405273, smape:22.559531033039093, dtw:not calculated
+horizon:5 mse:0.23965363204479218, mae:0.4325532615184784, smape:28.470194339752197, dtw:not calculated
+horizon:6 mse:0.31844839453697205, mae:0.4992887079715729, smape:32.74807929992676, dtw:not calculated
+horizon:7 mse:0.24715949594974518, mae:0.36123207211494446, smape:23.567260801792145, dtw:not calculated
+horizon:8 mse:0.2823391854763031, mae:0.43591582775115967, smape:28.541558980941772, dtw:not calculated
+horizon:9 mse:0.31788352131843567, mae:0.444931298494339, smape:28.963732719421387, dtw:not calculated
+horizon:10 mse:0.284434974193573, mae:0.42730042338371277, smape:27.93963849544525, dtw:not calculated
+horizon:11 mse:0.15168996155261993, mae:0.2940690517425537, smape:19.364988803863525, dtw:not calculated
+horizon:12 mse:0.22925879061222076, mae:0.3544178903102875, smape:23.161721229553223, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.19372530281543732, mae:0.3536071181297302, smape:23.260176181793213, dtw:not calculated
+average metrics: horizon upto:12 mse:0.22292646765708923, mae:0.36995911598205566, smape:24.25832897424698, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.22292646765708923, mae:0.36995911598205566, smape:24.25832897424698, dtw:not calculated
+mean smape over horizons:  24.258328477541607
+
+
+python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/illness/ --data_path national_illness_24_4.csv --model_id tmmodels44 --model PatchTST_sepcmix_simple_flatten_change --data custom --features MS --seq_len 70 --label_len 0 --pred_len 36 --e_layers 3 --d_layers 1 --factor 3 --enc_in 5 --dec_in 7 --c_out 7 --des 'Exp' --n_heads 1 --batch_size 16 --d_model 256 --d_ff 1024 --patch_len 16 --stride 8 --num_workers 20 --target ILITOTAL --learning_rate 0.0001 --with_retrain 0;
+horizon:1 mse:0.04602552950382233, mae:0.18250015377998352, smape:12.13991791009903, dtw:not calculated
+horizon:2 mse:0.06099936366081238, mae:0.2249843329191208, smape:14.961469173431396, dtw:not calculated
+horizon:3 mse:0.15578345954418182, mae:0.37574559450149536, smape:24.895000457763672, dtw:not calculated
+horizon:4 mse:0.22153811156749725, mae:0.43787911534309387, smape:28.896015882492065, dtw:not calculated
+horizon:5 mse:0.14119847118854523, mae:0.3518838882446289, smape:23.316918313503265, dtw:not calculated
+horizon:6 mse:0.3041447103023529, mae:0.5271592140197754, smape:34.72303748130798, dtw:not calculated
+horizon:7 mse:0.8989426493644714, mae:0.808652400970459, smape:51.34878754615784, dtw:not calculated
+horizon:8 mse:0.6638721227645874, mae:0.7329185605049133, smape:47.335460782051086, dtw:not calculated
+horizon:9 mse:0.9872876405715942, mae:0.8379181027412415, smape:52.94114947319031, dtw:not calculated
+horizon:10 mse:0.5975174307823181, mae:0.6559109091758728, smape:42.34715700149536, dtw:not calculated
+horizon:11 mse:0.8665961623191833, mae:0.8192464113235474, smape:52.34726667404175, dtw:not calculated
+horizon:12 mse:0.8244917988777161, mae:0.8200691342353821, smape:52.59903073310852, dtw:not calculated
+horizon:13 mse:0.6795081496238708, mae:0.7451519966125488, smape:48.09809327125549, dtw:not calculated
+horizon:14 mse:0.7767224907875061, mae:0.8191343545913696, smape:52.793556451797485, dtw:not calculated
+horizon:15 mse:0.5314636826515198, mae:0.6659722328186035, smape:43.314775824546814, dtw:not calculated
+horizon:16 mse:0.32439541816711426, mae:0.525335967540741, smape:34.51550900936127, dtw:not calculated
+horizon:17 mse:0.16528742015361786, mae:0.3561842441558838, smape:23.550739884376526, dtw:not calculated
+horizon:18 mse:0.15320399403572083, mae:0.34996700286865234, smape:23.164701461791992, dtw:not calculated
+horizon:19 mse:0.05015663430094719, mae:0.17965097725391388, smape:11.939700692892075, dtw:not calculated
+horizon:20 mse:0.12889546155929565, mae:0.3169173002243042, smape:20.998726785182953, dtw:not calculated
+horizon:21 mse:0.37128350138664246, mae:0.5660932660102844, smape:37.12851703166962, dtw:not calculated
+horizon:22 mse:0.18191874027252197, mae:0.34235432744026184, smape:22.55333513021469, dtw:not calculated
+horizon:23 mse:0.22510334849357605, mae:0.394983172416687, smape:25.97728669643402, dtw:not calculated
+horizon:24 mse:0.08891052007675171, mae:0.21357835829257965, smape:14.136604964733124, dtw:not calculated
+horizon:25 mse:0.4580126106739044, mae:0.5890137553215027, smape:38.3467823266983, dtw:not calculated
+horizon:26 mse:0.42036256194114685, mae:0.5914174318313599, smape:38.65422308444977, dtw:not calculated
+horizon:27 mse:0.33881860971450806, mae:0.5619255900382996, smape:36.96549832820892, dtw:not calculated
+horizon:28 mse:0.6359602212905884, mae:0.7731651067733765, smape:50.251054763793945, dtw:not calculated
+horizon:29 mse:0.2937457263469696, mae:0.5228388905525208, smape:34.447088837623596, dtw:not calculated
+horizon:30 mse:0.8052437901496887, mae:0.8877714276313782, smape:57.44352340698242, dtw:not calculated
+horizon:31 mse:0.5345552563667297, mae:0.7001259922981262, smape:45.65368592739105, dtw:not calculated
+horizon:32 mse:0.6778627634048462, mae:0.8148166537284851, smape:52.97698378562927, dtw:not calculated
+horizon:33 mse:0.8608441352844238, mae:0.9185085296630859, smape:59.31602716445923, dtw:not calculated
+horizon:34 mse:0.7582618594169617, mae:0.8319624066352844, smape:53.745222091674805, dtw:not calculated
+horizon:35 mse:0.6960523128509521, mae:0.819098949432373, smape:53.18138003349304, dtw:not calculated
+horizon:36 mse:0.736677885055542, mae:0.8483860492706299, smape:55.029886960983276, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.15494827926158905, mae:0.3500254154205322, smape:23.155391216278076, dtw:not calculated
+average metrics: horizon upto:12 mse:0.4806998074054718, mae:0.5645723342895508, smape:36.487603187561035, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.46282345056533813, mae:0.5863672494888306, smape:38.112059235572815, dtw:not calculated
+mean smape over horizons:  38.112058759563496
+
+python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/illness/ --data_path national_illness_24_4.csv --model_id tmmodels44 --model PatchTST_sepcmix_simple_flatten_change --data custom --features MS --seq_len 62 --label_len 0 --pred_len 48 --e_layers 3 --d_layers 1 --factor 3 --enc_in 5 --dec_in 7 --c_out 7 --des 'Exp' --n_heads 1 --batch_size 16 --d_model 256 --d_ff 1024 --patch_len 16 --stride 8 --num_workers 20 --target ILITOTAL --learning_rate 0.0001 --with_retrain 0;
+horizon:1 mse:0.013300103135406971, mae:0.09699930250644684, smape:6.464866548776627, dtw:not calculated
+horizon:2 mse:0.11517981439828873, mae:0.33382898569107056, smape:22.166559100151062, dtw:not calculated
+horizon:3 mse:0.08860833197832108, mae:0.27837204933166504, smape:18.48946213722229, dtw:not calculated
+horizon:4 mse:0.20833556354045868, mae:0.45061320066452026, smape:29.81588840484619, dtw:not calculated
+horizon:5 mse:0.4327891767024994, mae:0.6490152478218079, smape:42.57450997829437, dtw:not calculated
+horizon:6 mse:0.48913875222206116, mae:0.6855692863464355, smape:44.85662877559662, dtw:not calculated
+horizon:7 mse:0.16362521052360535, mae:0.4021226763725281, smape:26.6573965549469, dtw:not calculated
+horizon:8 mse:0.3739732503890991, mae:0.5667586922645569, smape:37.145715951919556, dtw:not calculated
+horizon:9 mse:0.20896761119365692, mae:0.3738669753074646, smape:24.612335860729218, dtw:not calculated
+horizon:10 mse:0.35065513849258423, mae:0.5584719777107239, smape:36.67810559272766, dtw:not calculated
+horizon:11 mse:0.973828136920929, mae:0.884283721446991, smape:56.30003809928894, dtw:not calculated
+horizon:12 mse:0.7723428606987, mae:0.8391569256782532, smape:54.165685176849365, dtw:not calculated
+horizon:13 mse:1.6331493854522705, mae:1.1825345754623413, smape:73.32905530929565, dtw:not calculated
+horizon:14 mse:2.192993640899658, mae:1.4172927141189575, smape:86.65789365768433, dtw:not calculated
+horizon:15 mse:2.8563570976257324, mae:1.6356432437896729, smape:97.94691205024719, dtw:not calculated
+horizon:16 mse:2.65207839012146, mae:1.6068313121795654, smape:97.40346074104309, dtw:not calculated
+horizon:17 mse:2.581934690475464, mae:1.5961682796478271, smape:97.15222120285034, dtw:not calculated
+horizon:18 mse:1.9536926746368408, mae:1.377761960029602, smape:85.51062345504761, dtw:not calculated
+horizon:19 mse:0.8038803935050964, mae:0.8466602563858032, smape:54.521024227142334, dtw:not calculated
+horizon:20 mse:0.6860717535018921, mae:0.8192243576049805, smape:53.242433071136475, dtw:not calculated
+horizon:21 mse:0.7338501214981079, mae:0.8504084348678589, smape:55.19050359725952, dtw:not calculated
+horizon:22 mse:1.28957200050354, mae:1.1171340942382812, smape:70.96691727638245, dtw:not calculated
+horizon:23 mse:0.2071719616651535, mae:0.3990932106971741, smape:26.332464814186096, dtw:not calculated
+horizon:24 mse:0.1699497103691101, mae:0.4061576724052429, smape:26.912173628807068, dtw:not calculated
+horizon:25 mse:0.8076390027999878, mae:0.8977904319763184, smape:58.147549629211426, dtw:not calculated
+horizon:26 mse:1.2825289964675903, mae:1.1292939186096191, smape:71.90640568733215, dtw:not calculated
+horizon:27 mse:0.35428091883659363, mae:0.5933967232704163, smape:39.06319737434387, dtw:not calculated
+horizon:28 mse:0.6299176812171936, mae:0.7828544974327087, smape:50.972944498062134, dtw:not calculated
+horizon:29 mse:0.32179293036460876, mae:0.5584781765937805, smape:36.78744435310364, dtw:not calculated
+horizon:30 mse:0.004835338331758976, mae:0.061122797429561615, smape:4.075868800282478, dtw:not calculated
+horizon:31 mse:0.11378580331802368, mae:0.2761761248111725, smape:18.289893865585327, dtw:not calculated
+horizon:32 mse:0.0019155588233843446, mae:0.036259960383176804, smape:2.4183619767427444, dtw:not calculated
+horizon:33 mse:0.04864714294672012, mae:0.19463953375816345, smape:12.948769330978394, dtw:not calculated
+horizon:34 mse:0.21530255675315857, mae:0.455982506275177, smape:30.160006880760193, dtw:not calculated
+horizon:35 mse:0.2914923131465912, mae:0.5334364175796509, smape:35.185226798057556, dtw:not calculated
+horizon:36 mse:0.18391656875610352, mae:0.4233139455318451, smape:28.03632616996765, dtw:not calculated
+horizon:37 mse:0.10223330557346344, mae:0.31737321615219116, smape:21.087530255317688, dtw:not calculated
+horizon:38 mse:0.20540396869182587, mae:0.45183783769607544, smape:29.908618330955505, dtw:not calculated
+horizon:39 mse:0.3171996474266052, mae:0.5359941720962524, smape:35.26158928871155, dtw:not calculated
+horizon:40 mse:0.38657262921333313, mae:0.614165186882019, smape:40.36233425140381, dtw:not calculated
+horizon:41 mse:0.9795850515365601, mae:0.9829187393188477, smape:63.22751045227051, dtw:not calculated
+horizon:42 mse:0.32989317178726196, mae:0.5619872212409973, smape:36.993518471717834, dtw:not calculated
+horizon:43 mse:0.5950242280960083, mae:0.7677909731864929, smape:50.09337067604065, dtw:not calculated
+horizon:44 mse:1.1187317371368408, mae:1.0571166276931763, smape:67.72117018699646, dtw:not calculated
+horizon:45 mse:0.4337530732154846, mae:0.6564544439315796, smape:43.08786988258362, dtw:not calculated
+horizon:46 mse:0.3556658625602722, mae:0.5886193513870239, smape:38.7256383895874, dtw:not calculated
+horizon:47 mse:0.23081600666046143, mae:0.46999257802963257, smape:31.06188178062439, dtw:not calculated
+horizon:48 mse:0.536298394203186, mae:0.7294038534164429, smape:47.6939857006073, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.22455860674381256, mae:0.4157329797744751, smape:27.394655346870422, dtw:not calculated
+average metrics: horizon upto:12 mse:0.3492286503314972, mae:0.5099216103553772, smape:33.327266573905945, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.6624724864959717, mae:0.688549280166626, smape:44.131457805633545, dtw:not calculated
+mean smape over horizons:  44.131456005076565
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fs47816@c4-16 Time-Series-Library$ python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/illness/ --data_path national_illness_24_4.csv --model_id tmmodels44 --model PatchTST_sepcmix_simple_flatten_change --data custom --features MS --seq_len 96 --label_len 0 --pred_len 36 --e_layers 3 --d_layers 1 --factor 3 --enc_in 5 --dec_in 7 --c_out 7 --des 'Exp' --n_heads 1 --batch_size 16 --d_model 256 --d_ff 1024 --patch_len 16 --stride 8 --num_workers 20 --target ILITOTAL --learning_rate 0.0001 --with_retrain 0;
+False
+Args in experiment:
+Basic Config
+  Task Name:          long_term_forecast  Is Training:        1
+  Model ID:           tmmodels44          Model:              PatchTST_sepcmix_simple_flatten_change
+
+Data Loader
+  Data:               custom              Root Path:          ./dataset/illness/
+  Data Path:          national_illness_24_4.csvFeatures:           MS
+  Target:             ILITOTAL            Freq:               h
+  Checkpoints:        ./checkpoints/
+
+Forecasting Task
+  Seq Len:            96                  Label Len:          0
+  Pred Len:           36                  Seasonal Patterns:  Monthly
+  Inverse:            0
+
+Model Parameters
+  Top k:              5                   Num Kernels:        6
+  Enc In:             5                   Dec In:             7
+  C Out:              7                   d model:            256
+  n heads:            1                   e layers:           3
+  d layers:           1                   d FF:               1024
+  Moving Avg:         25                  Factor:             3
+  Distil:             1                   Dropout:            0.1
+  Embed:              timeF               Activation:         gelu
+
+Run Parameters
+  Num Workers:        20                  Itr:                1
+  Train Epochs:       10                  Batch Size:         16
+  Patience:           3                   Learning Rate:      0.0001
+  Des:                Exp                 Loss:               MSE
+  Lradj:              type1               Use Amp:            0
+
+GPU
+  Use GPU:            0                   GPU:                0
+  Use Multi GPU:      0                   Devices:            0,1,2,3
+
+De-stationary Projector Params
+  P Hidden Dims:      128, 128            P Hidden Layers:    2
+
+Use CPU
+>>>>>>>start training : long_term_forecast_tmmodels44_PatchTST_sepcmix_simple_flatten_change_custom_ftMS_sl96_ll0_pl36_dm256_nh1_el3_dl1_df1024_expand2_dc4_fc3_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+The number of trainable parameters is: 7211044
+num_train: 209
+num_test: 52
+border1s: [0, 113, 114]
+border2s: [209, 210, 262]
+train 78
+num_train: 209
+num_test: 52
+border1s: [0, 113, 114]
+border2s: [209, 210, 262]
+test 17
+num_train: 209
+num_test: 52
+border1s: [0, 113, 114]
+border2s: [209, 210, 262]
+test 17
+Epoch: 1 cost time: 2.2080466747283936
+Epoch: 1, Steps: 5 | Train Loss: 0.8571741 Vali Loss: 0.6246511 Test Loss: 0.6246511
+Validation loss decreased (inf --> 0.857174).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 2.0832502841949463
+Epoch: 2, Steps: 5 | Train Loss: 0.5673695 Vali Loss: 0.3674010 Test Loss: 0.3674010
+Validation loss decreased (0.857174 --> 0.567369).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3 cost time: 2.109882354736328
+Epoch: 3, Steps: 5 | Train Loss: 0.5443899 Vali Loss: 0.3035373 Test Loss: 0.3035373
+Validation loss decreased (0.567369 --> 0.544390).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4 cost time: 2.150883197784424
+Epoch: 4, Steps: 5 | Train Loss: 0.4742147 Vali Loss: 0.2815030 Test Loss: 0.2815030
+Validation loss decreased (0.544390 --> 0.474215).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5 cost time: 2.205601215362549
+Epoch: 5, Steps: 5 | Train Loss: 0.5195869 Vali Loss: 0.2750863 Test Loss: 0.2750863
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-06
+Epoch: 6 cost time: 2.2025444507598877
+Epoch: 6, Steps: 5 | Train Loss: 0.4723144 Vali Loss: 0.2714413 Test Loss: 0.2714413
+Validation loss decreased (0.474215 --> 0.472314).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7 cost time: 2.188648223876953
+Epoch: 7, Steps: 5 | Train Loss: 0.4461301 Vali Loss: 0.2706403 Test Loss: 0.2706403
+Validation loss decreased (0.472314 --> 0.446130).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 8 cost time: 2.2454113960266113
+Epoch: 8, Steps: 5 | Train Loss: 0.3885749 Vali Loss: 0.2714200 Test Loss: 0.2714200
+Validation loss decreased (0.446130 --> 0.388575).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9 cost time: 2.151930093765259
+Epoch: 9, Steps: 5 | Train Loss: 0.4327191 Vali Loss: 0.2713987 Test Loss: 0.2713987
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.90625e-07
+Epoch: 10 cost time: 2.1486127376556396
+Epoch: 10, Steps: 5 | Train Loss: 0.4673706 Vali Loss: 0.2713496 Test Loss: 0.2713496
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.953125e-07
+>>>>>>>testing : long_term_forecast_tmmodels44_PatchTST_sepcmix_simple_flatten_change_custom_ftMS_sl96_ll0_pl36_dm256_nh1_el3_dl1_df1024_expand2_dc4_fc3_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+num_train: 209
+num_test: 52
+border1s: [0, 113, 114]
+border2s: [209, 210, 262]
+test 17
+test shape: (17, 36, 1) (17, 36, 1)
+test shape: (17, 36, 1) (17, 36, 1)
+horizon:1 mse:0.20224535465240479, mae:0.2865258455276489, smape:18.578332662582397, dtw:not calculated
+horizon:2 mse:0.19414785504341125, mae:0.29809531569480896, smape:19.442209601402283, dtw:not calculated
+horizon:3 mse:0.3730473220348358, mae:0.38853028416633606, smape:24.793720245361328, dtw:not calculated
+horizon:4 mse:0.37294819951057434, mae:0.3985552191734314, smape:25.491449236869812, dtw:not calculated
+horizon:5 mse:0.32810312509536743, mae:0.4075341820716858, smape:26.34373903274536, dtw:not calculated
+horizon:6 mse:0.2367510199546814, mae:0.3558168411254883, smape:23.224809765815735, dtw:not calculated
+horizon:7 mse:0.3718840777873993, mae:0.4690645635128021, smape:30.426102876663208, dtw:not calculated
+horizon:8 mse:0.38691386580467224, mae:0.5470353364944458, smape:35.73898673057556, dtw:not calculated
+horizon:9 mse:0.43189728260040283, mae:0.5613786578178406, smape:36.538028717041016, dtw:not calculated
+horizon:10 mse:0.21827152371406555, mae:0.3853939175605774, smape:25.343546271324158, dtw:not calculated
+horizon:11 mse:0.1420222967863083, mae:0.3099260926246643, smape:20.47485113143921, dtw:not calculated
+horizon:12 mse:0.23567387461662292, mae:0.387962281703949, smape:25.461071729660034, dtw:not calculated
+horizon:13 mse:0.8537211418151855, mae:0.8257778882980347, smape:52.832239866256714, dtw:not calculated
+horizon:14 mse:0.18637272715568542, mae:0.38825103640556335, smape:25.657424330711365, dtw:not calculated
+horizon:15 mse:0.05099168419837952, mae:0.17959177494049072, smape:11.936376988887787, dtw:not calculated
+horizon:16 mse:0.2579890787601471, mae:0.4508870542049408, smape:29.64969277381897, dtw:not calculated
+horizon:17 mse:0.3443290591239929, mae:0.4489881098270416, smape:29.152974486351013, dtw:not calculated
+horizon:18 mse:0.582599937915802, mae:0.6725039482116699, smape:43.495798110961914, dtw:not calculated
+horizon:19 mse:0.2732231616973877, mae:0.47266796231269836, smape:31.09821081161499, dtw:not calculated
+horizon:20 mse:0.2138805389404297, mae:0.4333524703979492, smape:28.630658984184265, dtw:not calculated
+horizon:21 mse:0.20636147260665894, mae:0.40146687626838684, smape:26.500824093818665, dtw:not calculated
+horizon:22 mse:0.07319054007530212, mae:0.23490263521671295, smape:15.605854988098145, dtw:not calculated
+horizon:23 mse:0.23015457391738892, mae:0.4065663814544678, smape:26.76403820514679, dtw:not calculated
+horizon:24 mse:0.14684146642684937, mae:0.33903688192367554, smape:22.441700100898743, dtw:not calculated
+horizon:25 mse:0.5298015475273132, mae:0.6017724275588989, smape:38.946375250816345, dtw:not calculated
+horizon:26 mse:0.1211407482624054, mae:0.3148259222507477, smape:20.877142250537872, dtw:not calculated
+horizon:27 mse:0.19865816831588745, mae:0.41368260979652405, smape:27.34501361846924, dtw:not calculated
+horizon:28 mse:0.11905605345964432, mae:0.2866688668727875, smape:18.96502673625946, dtw:not calculated
+horizon:29 mse:0.39558762311935425, mae:0.618482232093811, smape:40.62380790710449, dtw:not calculated
+horizon:30 mse:0.1281844675540924, mae:0.33124661445617676, smape:21.95943593978882, dtw:not calculated
+horizon:31 mse:0.3946402072906494, mae:0.5746816396713257, smape:37.63210475444794, dtw:not calculated
+horizon:32 mse:0.24081841111183167, mae:0.38206374645233154, smape:25.036442279815674, dtw:not calculated
+horizon:33 mse:0.24973765015602112, mae:0.44254955649375916, smape:29.145145416259766, dtw:not calculated
+horizon:34 mse:0.3003871440887451, mae:0.545323371887207, smape:35.967108607292175, dtw:not calculated
+horizon:35 mse:0.10977069288492203, mae:0.30093279480934143, smape:19.965732097625732, dtw:not calculated
+horizon:36 mse:0.06977667659521103, mae:0.24473796784877777, smape:16.270463168621063, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.28454044461250305, mae:0.3558430075645447, smape:22.979041934013367, dtw:not calculated
+average metrics: horizon upto:12 mse:0.2911588251590729, mae:0.39965155720710754, smape:25.98806917667389, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.27142003178596497, mae:0.41963276267051697, smape:27.454346418380737, dtw:not calculated
+mean smape over horizons:  27.454345549146336
+

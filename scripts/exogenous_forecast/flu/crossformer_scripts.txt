@@ -1,0 +1,164 @@
+horizon:1 mse:0.11067329347133636, mae:0.25860366225242615, smape:17.094936966896057, dtw:not calculated
+horizon:2 mse:0.14938679337501526, mae:0.2782554626464844, smape:18.308746814727783, dtw:not calculated
+horizon:3 mse:0.3317262530326843, mae:0.4795665144920349, smape:31.32879137992859, dtw:not calculated
+horizon:4 mse:0.518231213092804, mae:0.6258453726768494, smape:40.55969715118408, dtw:not calculated
+horizon:5 mse:1.042701244354248, mae:0.949248194694519, smape:60.402244329452515, dtw:not calculated
+horizon:6 mse:0.3762190043926239, mae:0.5132952928543091, smape:33.432140946388245, dtw:not calculated
+horizon:7 mse:0.5085660815238953, mae:0.6237080097198486, smape:40.45005440711975, dtw:not calculated
+horizon:8 mse:0.5407642126083374, mae:0.6342628002166748, smape:41.00784659385681, dtw:not calculated
+horizon:9 mse:0.29614806175231934, mae:0.45195695757865906, smape:29.585400223731995, dtw:not calculated
+horizon:10 mse:0.8819423317909241, mae:0.8146941661834717, smape:51.823049783706665, dtw:not calculated
+horizon:11 mse:1.0900553464889526, mae:0.8916186094284058, smape:56.08384609222412, dtw:not calculated
+horizon:12 mse:0.5240975022315979, mae:0.6366479992866516, smape:41.29181504249573, dtw:not calculated
+horizon:13 mse:0.8704536557197571, mae:0.7906819581985474, smape:50.22086501121521, dtw:not calculated
+horizon:14 mse:0.7509288787841797, mae:0.7415752410888672, smape:47.45035469532013, dtw:not calculated
+horizon:15 mse:0.7689051032066345, mae:0.7885324954986572, smape:50.632596015930176, dtw:not calculated
+horizon:16 mse:0.832658052444458, mae:0.7800133228302002, smape:49.64457154273987, dtw:not calculated
+horizon:17 mse:1.0958324670791626, mae:0.8517704606056213, smape:53.18537950515747, dtw:not calculated
+horizon:18 mse:0.7577000260353088, mae:0.770796000957489, smape:49.4344025850296, dtw:not calculated
+horizon:19 mse:0.7139161825180054, mae:0.7489339113235474, smape:48.15776348114014, dtw:not calculated
+horizon:20 mse:0.6514676213264465, mae:0.7272752523422241, smape:46.984705328941345, dtw:not calculated
+horizon:21 mse:0.872506320476532, mae:0.8155198097229004, smape:51.95683836936951, dtw:not calculated
+horizon:22 mse:0.706942081451416, mae:0.7590789198875427, smape:48.94200563430786, dtw:not calculated
+horizon:23 mse:0.627633273601532, mae:0.7178362011909485, smape:46.48513197898865, dtw:not calculated
+horizon:24 mse:0.805609405040741, mae:0.7800597548484802, smape:49.865809082984924, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.4214896261692047, mae:0.517469048500061, smape:33.5210919380188, dtw:not calculated
+average metrics: horizon upto:12 mse:0.5308759212493896, mae:0.5964752435684204, smape:38.44737708568573, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.6593776941299438, mae:0.6845740079879761, smape:43.93036961555481, dtw:not calculated
+mean smape over horizons:  43.93037470678488
+fs47816@b8-3 Time-Series-Library$ python -u run.py   --task_name long_term_forecast   --is_training 1   --root_path ./dataset/illness/   --data_path national_illness_24_4.csv   --model_id ili_36_24   --model Crossformer   --data custom   --features MS   --seq_len 36   --label_len 18   --pred_len 24   --e_layers 2   --d_layers 1   --factor 3   --enc_in 5   --dec_in 5   --c_out 5   --d_model 768   --d_ff 768   --top_k 5   --des 'Exp'   --dropout 0.6   --target ILITOTAL --itr 1 --with_retrain 0;
+
+
+
+
+horizon:1 mse:0.15510687232017517, mae:0.33023515343666077, smape:21.80819809436798, dtw:not calculated
+horizon:2 mse:0.23242610692977905, mae:0.3861684203147888, smape:25.325262546539307, dtw:not calculated
+horizon:3 mse:0.3721746802330017, mae:0.4853513240814209, smape:31.53913915157318, dtw:not calculated
+horizon:4 mse:0.4243132770061493, mae:0.5370753407478333, smape:34.876665472984314, dtw:not calculated
+horizon:5 mse:0.25357866287231445, mae:0.41933318972587585, smape:27.52739191055298, dtw:not calculated
+horizon:6 mse:0.34737440943717957, mae:0.49613064527511597, smape:32.40272402763367, dtw:not calculated
+horizon:7 mse:0.5411108732223511, mae:0.6433175206184387, smape:41.67839288711548, dtw:not calculated
+horizon:8 mse:0.4998423755168915, mae:0.6060281991958618, smape:39.2926424741745, dtw:not calculated
+horizon:9 mse:0.5167275667190552, mae:0.6362290978431702, smape:41.305020451545715, dtw:not calculated
+horizon:10 mse:0.5889346599578857, mae:0.6737053394317627, smape:43.54063868522644, dtw:not calculated
+horizon:11 mse:0.5462879538536072, mae:0.6541581749916077, smape:42.40735173225403, dtw:not calculated
+horizon:12 mse:0.7733638286590576, mae:0.7690619230270386, smape:49.257972836494446, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.2974957227706909, mae:0.4423823654651642, smape:28.913232684135437, dtw:not calculated
+average metrics: horizon upto:12 mse:0.4376034736633301, mae:0.5530661940574646, smape:35.91344952583313, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.4376034736633301, mae:0.5530661940574646, smape:35.91344952583313, dtw:not calculated
+mean smape over horizons:  35.913450022538505
+fs47816@b8-3 Time-Series-Library$ python -u run.py   --task_name long_term_forecast   --is_training 1   --root_path ./dataset/illness/   --data_path national_illness_24_4.csv   --model_id ili_36_24   --model Crossformer   --data custom   --features MS   --seq_len 64   --label_len 18   --pred_len 12   --e_layers 3   --d_layers 1   --factor 3   --enc_in 5   --dec_in 5   --c_out 5   --d_model 2048   --d_ff 768   --top_k 5   --des 'Exp'    --target ILITOTAL --itr 1 --batch_size 64 --with_retrain 0;
+
+
+
+
+
+horizon:1 mse:0.18463993072509766, mae:0.3397862911224365, smape:22.37330824136734, dtw:not calculated
+horizon:2 mse:0.21067702770233154, mae:0.3456836938858032, smape:22.66497015953064, dtw:not calculated
+horizon:3 mse:0.198935866355896, mae:0.3350498676300049, smape:21.98481261730194, dtw:not calculated
+horizon:4 mse:0.43738090991973877, mae:0.5322928428649902, smape:34.499406814575195, dtw:not calculated
+horizon:5 mse:0.4063537120819092, mae:0.5235437154769897, smape:34.05428230762482, dtw:not calculated
+horizon:6 mse:0.4946655333042145, mae:0.5759555697441101, smape:37.24236786365509, dtw:not calculated
+horizon:7 mse:0.36510634422302246, mae:0.4566679298877716, smape:29.638585448265076, dtw:not calculated
+horizon:8 mse:0.6414222121238708, mae:0.7287499904632568, smape:47.079119086265564, dtw:not calculated
+horizon:9 mse:0.9551970362663269, mae:0.9101502299308777, smape:58.104878664016724, dtw:not calculated
+horizon:10 mse:1.5119320154190063, mae:1.1904915571212769, smape:74.77930188179016, dtw:not calculated
+horizon:11 mse:0.7110795974731445, mae:0.7872421741485596, smape:50.81037878990173, dtw:not calculated
+horizon:12 mse:0.6558443307876587, mae:0.7552264332771301, smape:48.86912703514099, dtw:not calculated
+horizon:13 mse:0.9660943150520325, mae:0.9016908407211304, smape:57.50418305397034, dtw:not calculated
+horizon:14 mse:0.34056779742240906, mae:0.4955105483531952, smape:32.3883593082428, dtw:not calculated
+horizon:15 mse:0.38165420293807983, mae:0.5102642178535461, smape:33.240410685539246, dtw:not calculated
+horizon:16 mse:0.711973249912262, mae:0.7073280811309814, smape:45.218512415885925, dtw:not calculated
+horizon:17 mse:0.9488344788551331, mae:0.8214173316955566, smape:51.94283127784729, dtw:not calculated
+horizon:18 mse:0.6865410208702087, mae:0.6795498132705688, smape:43.3902382850647, dtw:not calculated
+horizon:19 mse:0.7858686447143555, mae:0.739291787147522, smape:47.03451097011566, dtw:not calculated
+horizon:20 mse:0.3285311460494995, mae:0.4935286045074463, smape:32.2874516248703, dtw:not calculated
+horizon:21 mse:0.4989449679851532, mae:0.6156017780303955, smape:39.97572362422943, dtw:not calculated
+horizon:22 mse:0.3696809411048889, mae:0.5405226945877075, smape:35.36817133426666, dtw:not calculated
+horizon:23 mse:0.373970091342926, mae:0.5361161231994629, smape:35.07288694381714, dtw:not calculated
+horizon:24 mse:0.42296648025512695, mae:0.574592649936676, smape:37.50106692314148, dtw:not calculated
+horizon:25 mse:0.5321113467216492, mae:0.629084050655365, smape:40.77439308166504, dtw:not calculated
+horizon:26 mse:0.9394529461860657, mae:0.8307121992111206, smape:52.63901948928833, dtw:not calculated
+horizon:27 mse:0.5500708222389221, mae:0.6278516054153442, smape:40.582579374313354, dtw:not calculated
+horizon:28 mse:0.7066963315010071, mae:0.7144531607627869, smape:45.78092098236084, dtw:not calculated
+horizon:29 mse:0.6274253726005554, mae:0.668486475944519, smape:42.99752116203308, dtw:not calculated
+horizon:30 mse:0.8311295509338379, mae:0.7778115272521973, smape:49.5609849691391, dtw:not calculated
+horizon:31 mse:0.6706071496009827, mae:0.6984102129936218, smape:44.850149750709534, dtw:not calculated
+horizon:32 mse:0.7275894284248352, mae:0.7426263689994812, smape:47.67424762248993, dtw:not calculated
+horizon:33 mse:0.44699180126190186, mae:0.5704196095466614, smape:37.09649741649628, dtw:not calculated
+horizon:34 mse:1.0803887844085693, mae:0.9355854392051697, smape:59.293097257614136, dtw:not calculated
+horizon:35 mse:1.0169512033462524, mae:0.9264810085296631, smape:59.015703201293945, dtw:not calculated
+horizon:36 mse:0.956323504447937, mae:0.8944644331932068, smape:57.11902976036072, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.32210883498191833, mae:0.4420519471168518, smape:28.80319058895111, dtw:not calculated
+average metrics: horizon upto:12 mse:0.5644361972808838, mae:0.6234034299850464, smape:40.175044536590576, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.6298500299453735, mae:0.6697956323623657, smape:43.06691586971283, dtw:not calculated
+mean smape over horizons:  43.066917484005295
+fs47816@b8-3 Time-Series-Library$ python -u run.py   --task_name long_term_forecast   --is_training 1   --root_path ./dataset/illness/   --data_path national_illness_24_4.csv   --model_id ili_36_24   --model Crossformer   --data custom   --features MS   --seq_len 36   --label_len 18   --pred_len 36   --e_layers 2   --d_layers 1   --factor 3   --enc_in 5   --dec_in 5   --c_out 5   --d_model 768   --d_ff 768   --top_k 5   --des 'Exp'   --dropout 0.6   --target ILITOTAL --itr 1 --with_retrain 0;
+
+
+
+horizon:1 mse:0.03379419818520546, mae:0.1758347600698471, smape:11.71160340309143, dtw:not calculated
+horizon:2 mse:0.004834971856325865, mae:0.05567441135644913, smape:3.7124477326869965, dtw:not calculated
+horizon:3 mse:0.021314168348908424, mae:0.13758429884910583, smape:9.16840136051178, dtw:not calculated
+horizon:4 mse:0.09231317788362503, mae:0.2892884612083435, smape:19.219116866588593, dtw:not calculated
+horizon:5 mse:0.0681847333908081, mae:0.215738445520401, smape:14.33129608631134, dtw:not calculated
+horizon:6 mse:0.09670218825340271, mae:0.2820427715778351, smape:18.72299015522003, dtw:not calculated
+horizon:7 mse:0.7596215605735779, mae:0.8617560267448425, smape:55.85131645202637, dtw:not calculated
+horizon:8 mse:0.20342354476451874, mae:0.4063097834587097, smape:26.8169105052948, dtw:not calculated
+horizon:9 mse:0.2077358216047287, mae:0.4087907671928406, smape:26.97613835334778, dtw:not calculated
+horizon:10 mse:0.6923326849937439, mae:0.8191258311271667, smape:53.202253580093384, dtw:not calculated
+horizon:11 mse:0.49452275037765503, mae:0.6831213235855103, smape:44.6627140045166, dtw:not calculated
+horizon:12 mse:0.44393235445022583, mae:0.6426128149032593, smape:42.074576020240784, dtw:not calculated
+horizon:13 mse:0.31234094500541687, mae:0.5092929601669312, smape:33.44756066799164, dtw:not calculated
+horizon:14 mse:0.5581799745559692, mae:0.6707345843315125, smape:43.49621832370758, dtw:not calculated
+horizon:15 mse:1.4221160411834717, mae:1.1560001373291016, smape:72.9011058807373, dtw:not calculated
+horizon:16 mse:0.5683644413948059, mae:0.7334343194961548, smape:47.81923294067383, dtw:not calculated
+horizon:17 mse:0.7994352579116821, mae:0.8773528933525085, smape:56.73650503158569, dtw:not calculated
+horizon:18 mse:0.7766879796981812, mae:0.8295362591743469, smape:53.49220633506775, dtw:not calculated
+horizon:19 mse:0.3702535033226013, mae:0.5341216921806335, smape:34.91494357585907, dtw:not calculated
+horizon:20 mse:0.7968887686729431, mae:0.8678056597709656, smape:56.0546875, dtw:not calculated
+horizon:21 mse:0.7398061752319336, mae:0.8553223609924316, smape:55.50607442855835, dtw:not calculated
+horizon:22 mse:0.684249997138977, mae:0.8253782987594604, smape:53.68838310241699, dtw:not calculated
+horizon:23 mse:0.19046851992607117, mae:0.43517589569091797, smape:28.82157266139984, dtw:not calculated
+horizon:24 mse:0.015492727980017662, mae:0.12105600535869598, smape:8.06952714920044, dtw:not calculated
+horizon:25 mse:0.12270462512969971, mae:0.3350908160209656, smape:22.23452627658844, dtw:not calculated
+horizon:26 mse:0.06369297951459885, mae:0.2114635705947876, smape:14.048145711421967, dtw:not calculated
+horizon:27 mse:0.032040201127529144, mae:0.16061453521251678, smape:10.695884376764297, dtw:not calculated
+horizon:28 mse:0.05109373480081558, mae:0.19272732734680176, smape:12.817560136318207, dtw:not calculated
+horizon:29 mse:0.05971338227391243, mae:0.19228093326091766, smape:12.770307064056396, dtw:not calculated
+horizon:30 mse:0.09995104372501373, mae:0.26574772596359253, smape:17.624910175800323, dtw:not calculated
+horizon:31 mse:0.20021744072437286, mae:0.41490092873573303, smape:27.413156628608704, dtw:not calculated
+horizon:32 mse:0.2464299201965332, mae:0.46428436040878296, smape:30.623120069503784, dtw:not calculated
+horizon:33 mse:0.15080156922340393, mae:0.3669804632663727, smape:24.315743148326874, dtw:not calculated
+horizon:34 mse:0.8412793874740601, mae:0.9075096845626831, smape:58.64707827568054, dtw:not calculated
+horizon:35 mse:1.6861131191253662, mae:1.2951159477233887, smape:81.32144212722778, dtw:not calculated
+horizon:36 mse:0.7140188813209534, mae:0.8400279879570007, smape:54.5643150806427, dtw:not calculated
+horizon:37 mse:1.7759901285171509, mae:1.3280854225158691, smape:83.12147259712219, dtw:not calculated
+horizon:38 mse:1.086613416671753, mae:1.0360504388809204, smape:66.39472842216492, dtw:not calculated
+horizon:39 mse:1.38718581199646, mae:1.1680494546890259, smape:74.03227686882019, dtw:not calculated
+horizon:40 mse:3.144456386566162, mae:1.7614704370498657, smape:105.263352394104, dtw:not calculated
+horizon:41 mse:2.515052556991577, mae:1.5802228450775146, smape:96.47367596626282, dtw:not calculated
+horizon:42 mse:3.4620494842529297, mae:1.8554017543792725, smape:109.89208221435547, dtw:not calculated
+horizon:43 mse:1.5909019708633423, mae:1.2583696842193604, smape:79.27753329277039, dtw:not calculated
+horizon:44 mse:1.974609375, mae:1.403607964515686, smape:87.30083703994751, dtw:not calculated
+horizon:45 mse:1.4966468811035156, mae:1.2222445011138916, smape:77.27232575416565, dtw:not calculated
+horizon:46 mse:1.3022741079330444, mae:1.140429139137268, smape:72.59023785591125, dtw:not calculated
+horizon:47 mse:2.0875356197357178, mae:1.4445940256118774, smape:89.53005075454712, dtw:not calculated
+horizon:48 mse:1.2281458377838135, mae:1.1080801486968994, smape:70.71939706802368, dtw:not calculated
+===============================================================================
+average metrics: horizon upto:6 mse:0.05285724252462387, mae:0.19269387423992157, smape:12.810975313186646, dtw:not calculated
+average metrics: horizon upto:12 mse:0.25989267230033875, mae:0.4148233234882355, smape:27.20414698123932, dtw:not calculated
+===============================================================================
+average of horizons: mse:0.7848441004753113, mae:0.7363842129707336, smape:46.88212275505066, dtw:not calculated
+mean smape over horizons:  46.88212377950549
+fs47816@b8-3 Time-Series-Library$ python -u run.py   --task_name long_term_forecast   --is_training 1   --root_path ./dataset/illness/   --data_path national_illness_24_4.csv   --model_id ili_36_24   --model Crossformer   --data custom   --features MS   --seq_len 64   --label_len 18   --pred_len 48   --e_layers 2   --d_layers 1   --factor 3   --enc_in 5   --dec_in 5   --c_out 5   --d_model 768   --d_ff 768   --top_k 5   --des 'Exp'   --dropout 0.6  --batch_size 64 --target ILITOTAL --itr 1 --with_retrain 0;
+
+
+
+
